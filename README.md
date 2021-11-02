@@ -9,6 +9,10 @@
 - ......
 - *还有更多待开发功能* 
 
+<img src="https://github.com/LiuZ-csdn/Quadruped-Robot/blob/master/a1_slope.gif">
+<img src="https://github.com/LiuZ-csdn/Quadruped-Robot/blob/master/a1_stop.gif">
+<img src="https://github.com/LiuZ-csdn/Quadruped-Robot/blob/master/anymal_slope.gif">
+
 # 编译
 控制器底层仍是基于c++进行编写，利用pybind11提供python交互接口
 ```shell
