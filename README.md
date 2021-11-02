@@ -16,6 +16,7 @@
 # 依赖
 - python3.x
 - pybullet(pip install pybullet)
+- pygame(pip install pygame)
 - c++编译器(不限平台，win或linux都可)
 
 # 编译
@@ -29,9 +30,14 @@ make -j4
 # 运行
 使用pybullet仿真环境，运动控制器接受来自仿真环境的传感器数据，经过计算返回各关节控制力矩
 
-
+有手柄
 ```shell
 python walking_simulation.py
+```
+
+没有手柄
+```shell
+python walking_simulation_without_joystick.py
 ```
 
 # 机器人控制
