@@ -13,6 +13,11 @@
 <img src="https://github.com/LiuZ-csdn/Quadruped-Robot/blob/master/a1_stop.gif">
 <img src="https://github.com/LiuZ-csdn/Quadruped-Robot/blob/master/anymal_slope.gif">
 
+# 依赖
+- python3.x
+- pybullet(pip install pybullet)
+- c++编译器(不限平台，win或linux都可)
+
 # 编译
 控制器底层仍是基于c++进行编写，利用pybind11提供python交互接口
 ```shell
@@ -23,6 +28,8 @@ make -j4
 ```
 # 运行
 使用pybullet仿真环境，运动控制器接受来自仿真环境的传感器数据，经过计算返回各关节控制力矩
+
+
 ```shell
 python walking_simulation.py
 ```
