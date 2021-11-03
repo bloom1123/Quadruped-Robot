@@ -1,15 +1,15 @@
 
 import os
 import numpy as np
-import pyquaternion
-import matplotlib.pyplot as plt
+# import pyquaternion
+# import matplotlib.pyplot as plt
 import time
 import random
 import ctypes
-from PIL import Image as pil
+# from PIL import Image as pil
 import pybullet as p
 import pybullet_data
-from pybullet_utils import gazebo_world_parser
+# from pybullet_utils import gazebo_world_parser
 from build.robot_controller import robot_controller
 from JoystickInterface import JoystickInterface
 
@@ -234,9 +234,9 @@ def main():
 
 
 if __name__ == '__main__':
-    tau_arrays = []
-    imu_array = []
-    leg_array = []
+    # tau_arrays = []
+    # imu_array = []
+    # leg_array = []
     terrain = "plane"
     lateralFriction = 1.0
     spinningFriction = 0.065
@@ -274,19 +274,19 @@ if __name__ == '__main__':
 
     main()
 
-    x = np.linspace(-100,100,MAX_STEPS)
-    tau_arrays = np.array(tau_arrays)
-    imu_array = np.array(imu_array)
-    leg_array = np.array(leg_array)
+    # x = np.linspace(-100,100,MAX_STEPS)
+    # tau_arrays = np.array(tau_arrays)
+    # imu_array = np.array(imu_array)
+    # leg_array = np.array(leg_array)
 
     # tau
-    figure1 = plt.figure()
-    for i in range(4):
-        plt.subplot(4, 1, i+1)
-        plt.plot(x, tau_arrays[:, 3*i], label='abad')
-        plt.plot(x, tau_arrays[:, 3*i+1], label='hip')
-        plt.plot(x, tau_arrays[:, 3*i+2], label='knee')
-        plt.legend()
+    # figure1 = plt.figure()
+    # for i in range(4):
+        # plt.subplot(4, 1, i+1)
+        # plt.plot(x, tau_arrays[:, 3*i], label='abad')
+        # plt.plot(x, tau_arrays[:, 3*i+1], label='hip')
+        # plt.plot(x, tau_arrays[:, 3*i+2], label='knee')
+        # plt.legend()
 
     # imu omega & acceleration
     # figure2 = plt.figure()
@@ -307,4 +307,4 @@ if __name__ == '__main__':
     #     plt.subplot(4, 3, i + 1)
     #     plt.plot(x, leg_array[:, i])
 
-    plt.show()
+    # plt.show()
