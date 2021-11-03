@@ -17,6 +17,8 @@
 - python3.x
 - pybullet(pip install pybullet)
 - pygame(pip install pygame)
+- numpy(pip install numpy)
+- matplotlib(可选，用于绘制曲线)
 - c++编译器(不限平台，win或linux都可)
 
 # 编译
